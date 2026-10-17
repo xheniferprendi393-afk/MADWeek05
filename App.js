@@ -1,19 +1,20 @@
 import { StyleSheet, View, Image } from 'react-native';
 import Swiper from 'react-native-swiper';
 import PersonalInfo from './components/PersonalInfo';
-
+import MovieBooking from './components/MovieBooking';
 export default function App() {
   return (
     <View style={styles.screencontainer}>
       <View style={styles.imgview}>
         <Image
-          source={require('./assets/movies.jpg')}
+          source={require('./assets/images.jpeg')}
           style={styles.img}
           resizeMode="contain"
         />
       </View>
       <Swiper showsButtons={true}>
         <PersonalInfo screenstyle={styles.screen} />
+        <MovieBooking screenstyle={styles.screen} />
       </Swiper>
     </View>
   );
